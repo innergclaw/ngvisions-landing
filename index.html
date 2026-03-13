@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NGVISIONS | Digital Design & Creative Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --black: #0a0a0a;
+      --white: #ffffff;
+      --gray: #888888;
+      --accent: #00ff88;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--black);
+      color: var(--white);
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      padding: 60px 40px;
+      text-align: center;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .logo-container {
+      margin-bottom: 30px;
+    }
+
+    .logo {
+      max-width: 400px;
+      width: 100%;
+      height: auto;
+      filter: drop-shadow(0 0 60px rgba(255,255,255,0.15));
+      animation: pulse 4s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { filter: drop-shadow(0 0 60px rgba(255,255,255,0.15)); }
+      50% { filter: drop-shadow(0 0 80px rgba(255,255,255,0.25)); }
+    }
+
+    .tagline {
+      font-size: 1.2rem;
+      color: var(--gray);
+      font-weight: 300;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 100px 40px;
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      margin-bottom: 30px;
+      line-height: 1.1;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      color: var(--gray);
+      max-width: 600px;
+      margin: 0 auto 50px;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      padding: 18px 50px;
+      background: var(--white);
+      color: var(--black);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+
+    .cta-btn:hover {
+      background: var(--accent);
+      transform: translateY(-3px);
+      box-shadow: 0 10px 40px rgba(0,255,136,0.3);
+    }
+
+    /* Section Placeholder */
+    .section {
+      padding: 80px 40px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .section p {
+      color: var(--gray);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Footer */
+    footer {
+      padding: 40px;
+      text-align: center;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      color: var(--gray);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      header { padding: 40px 20px; }
+      .logo { max-width: 280px; }
+      .hero { padding: 60px 20px; }
+      .hero h1 { font-size: 2.2rem; }
+      .hero p { font-size: 1.1rem; }
+      .section { padding: 50px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-container">
+      <img src="logo.png" alt="NGVISIONS" class="logo">
+    </div>
+    <p class="tagline">Digital Design & Creative Solutions</p>
+  </header>
+
+  <section class="hero">
+    <h1>Where Vision Meets Design</h1>
+    <p>Professional graphic design, branding, and digital solutions for businesses ready to stand out.</p>
+    <a href="#contact" class="cta-btn">Get Started</a>
+  </section>
+
+  <section class="section" id="services">
+    <h2>Services</h2>
+    <p>Coming soon — logo design, branding, social media graphics, print materials, and more.</p>
+  </section>
+
+  <section class="section" id="portfolio">
+    <h2>Portfolio</h2>
+    <p>Coming soon — showcase of recent work and client projects.</p>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact</h2>
+    <p>Ready to elevate your brand? Let's talk.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 NGVISIONS. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
